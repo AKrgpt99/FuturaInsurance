@@ -1,0 +1,11 @@
+<script src="../js/globals.js"></script>
+<script>
+    let $name = "citations.html",
+        $title = "Citations";
+
+    if (location.pathname === $controllers_root + $name) {
+        sessionStorage.setItem("url", $name);
+        sessionStorage.setItem("title", $title);
+        location.assign($public_current_index);
+    }
+</script>
